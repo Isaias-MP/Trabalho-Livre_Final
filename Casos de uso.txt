@@ -1,0 +1,90 @@
+
+1. Visão Geral do Sistema
+Imagine um app de bolso que ajuda o usuário a controlar gastos e receitas sem complicação. Ele faz três coisinhas básicas (mas poderosas):
+
+Anota todas as entradas e saídas de dinheiro.
+
+Mostra relatórios simples e gráficos bonitinhos.
+
+Salva tudo automaticamente pra não perder nada.
+
+2. Casos de Uso (Como o Usuário Interage)
+Caso 1: "Vou Registrar Minha Grana"
+O que acontece:
+
+O usuário abre o programa e escolhe se quer registrar uma receita (ex.: salário) ou despesa (ex.: café).
+
+O sistema pergunta:
+
+Quanto? (valor)
+
+Pra quê? (descrição)
+
+É comida, transporte...? (categoria, se for despesa) ou Veio do quê? (fonte, se for receita).
+
+Se o usuário digitar algo errado (ex.: valor negativo), o sistema avisa na hora.
+
+Resultado:
+
+A transação é guardadinha na lista, e o sistema diz: "✅ Receita adicionada!".
+
+Caso 2: "Quero Ver Meu Saldo"
+O que acontece:
+
+O usuário clica em "Ver Relatório".
+
+O sistema faz uma continha rápida:
+
+Soma todas as receitas.
+
+Subtrai todas as despesas.
+
+Mostra numa telinha:
+
+"Saldo: R$ 1.200,00" (em verde se positivo, vermelho se negativo).
+
+Lista de todas as transações, como um extrato bancário simplificado.
+
+Se não tiver nada registrado:
+
+O sistema avisa: "Nada por aqui ainda... Cadastre uma transação!".
+
+Caso 3: "Quero um Gráfico Maneiro"
+O que acontece:
+
+O usuário seleciona "Ver Gráfico".
+
+O sistema agrupa todas as despesas por categoria (ex.: Alimentação: R$ 200) e plota um gráfico de barras coloridas.
+
+Se não houver despesas:
+
+Aparece: "Sem dados para mostrar. Que tal adicionar uma despesa?".
+
+Caso 4: "Não Quero Perder Meus Dados"
+O que acontece:
+
+Toda vez que o usuário sai do programa (ou a cada 5 minutos, se a gente implementar autosave), o sistema salva tudo num arquivo JSON.
+
+Na próxima vez que abrir, os dados continuam lá (ainda não implementado, mas é fácil fazer!).
+
+Se der erro ao salvar:
+
+O sistema avisa: "Ops, não consegui salvar. Verifique o espaço no disco!".
+
+3. Tecnologias Usadas (De Forma Simples)
+Linguagem: Python (porque é fácil e poderosa).
+
+Bibliotecas:
+
+matplotlib: Para os gráficos.
+
+json: Para salvar os dados.
+
+Padrão OO: Classes organizadinhas, herança e polimorfismo (como pedido!).
+
+4. Por Que Esse Projeto é Legal?
+Útil: Todo mundo precisa controlar gastos.
+
+Didático: Mostra herança, polimorfismo e persistência de dados.
+
+Extensível: Dá pra adicionar metas ("Quero guardar R$ 500 por mês!") ou integração com bancos.
