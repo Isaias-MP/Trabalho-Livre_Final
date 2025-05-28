@@ -1,0 +1,38 @@
+[
+    {
+        "valor": 100.0,
+        "descricao": "faxina",
+        "data": "24/05/2025",
+        "fonte": "freela"
+    },
+    {
+        "valor": 20.0,
+        "descricao": "almo\u00e7o",
+        "data": "24/05/2025",
+        "categoria": "alimenta\u00e7\u00e3o"
+    },
+    {
+        "valor": 200.0,
+        "descricao": "faculdade",
+        "data": "28/05/2025",
+        "fonte": "Freela"
+    },
+    {
+        "valor": 20.0,
+        "descricao": "almo\u00e7o",
+        "data": "28/05/2025",
+        "categoria": "Alimenta\u00e7\u00e3o "
+    },
+    {
+        "valor": 100000.0,
+        "descricao": "mega sena",
+        "data": "28/05/2025",
+        "fonte": "investimento"
+    },
+    {
+        "valor": 34.0,
+        "descricao": "oi",
+        "data": "28/05/2025",
+        "fonte": "aa"
+    }
+]
